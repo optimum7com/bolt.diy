@@ -105,6 +105,12 @@ export default defineConfig((config) => {
         protocolImports: true,
         exclude: ['child_process', 'fs', 'path'],
       }),
+  server: {
+      allowedHosts: [
+        'localhost',
+        'bolt.opt7dev.com'
+      ]
+    },
       {
         name: 'buffer-polyfill',
         transform(code, id) {
